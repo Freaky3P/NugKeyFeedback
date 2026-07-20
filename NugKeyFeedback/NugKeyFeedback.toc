@@ -1,0 +1,21 @@
+## Interface: 30300
+## Title: NugKeyFeedback
+## Version: 1.0.0-enhanced
+## Notes: |cff33ff99NugKeyFeedback - Enhanced|r|nFFXIV-style key & ability feedback for WotLK 3.3.5a.|n|n|cffffd100Original features:|r|n- Mirror of the action you pressed, with cast bar, cooldown swipe & cast flash|n- FF14-style press animation and a sliding spell-line of recent casts|n- Masque skinning; plays nice with Bartender4 / Neuron / ElvUI|n|n|cff33ff99Added in this fork:|r|n- Feedback from EVERY source: action bars, keybinds, bags, equipped items, /use macros, the Pet & Mount window & gear equips|n- Spell-line fires only on a real, completed use/cast - no false icons on fail, combat, movement or cooldown|n- Mounts & companions shown with their correct icons|n- Cooldown clock & text on the mirror for spells, items, mounts, gear & enchants (OmniCC draws the numbers)|n- 3-second delay so you see the icon before the cooldown clock appears|n- Clean, optimized, lightweight build|n|n|cffff8000Original:|r d87   |cffff8000WotLK backport:|r s0h2x
+## SavedVariables: NugKeyFeedbackDB
+## OptionalDeps: Masque, Bartender4, Neuron, ElvUI
+## Author: d87
+
+## X-WoWI-ID: 25488
+## X-Curse-Project-ID: 359317
+
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+Libs\AceConfig-3.0\AceConfig-3.0.xml
+Libs\Pools.lua
+
+SpellData.lua
+NugKeyFeedback.lua
+Frame.lua
+Options.lua
