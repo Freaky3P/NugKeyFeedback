@@ -1,3 +1,18 @@
-.github             export-ignore
-.gitattributes      export-ignore
-README.md           export-ignore
+# Line endings: normalize to LF in the repository, checked out native per platform.
+* text=auto
+*.lua text
+*.toc text
+*.xml text
+*.md  text
+
+# Binary assets -- never normalize, never diff.
+*.tga binary
+*.blp binary
+*.png binary
+
+# Keep repository/meta files out of exported (git archive) tarballs.
+.github        export-ignore
+.gitattributes export-ignore
+.gitignore     export-ignore
+README.md      export-ignore
+CHANGELOG.md   export-ignore
